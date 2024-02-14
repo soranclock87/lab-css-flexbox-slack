@@ -1,10 +1,254 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+
+:root{
+    --background_purple: #540B51;
+    --background_ivory: #F3EAE2;
+    --button_blue: #4285F4;
+    --titles_black: #191817;
+    --paragraph_black: #000000;
+    --paragraph_yellow: #ECB12F;
+    --links_blue: #2E71A6;
+    --footer_links_grey: #454245;
+    --white: #fff;
+}
+
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: #540B51;
+    display: flex;
+}
+.logo {
+    height: 30px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 18px;
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav div {
+    display: flex;
+}
+
+.information {
+    background-color: var(--background_purple);
+    text-align: center;
+    display: flex;
+}
+
+
+
+
+/* @media (max-width: 768px){ */
+    .menu{
+        display: none;
+    }
+    .btn-search,
+    .btn-burguer{
+        background-color: transparent;
+        border: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+    
+    .information {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .information h1 {
+        margin: 0;
+        color: var(--white);
+        text-align: center;
+        padding: 3%;
+        font-size: 38px;
+    }
+
+    .information p {
+        font-weight: 400;
+        color: var(--white);
+    }
+    .orange-text{
+        color: var(--paragraph_yellow);
+        font-weight: 600;
+    }
+
+    .content-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 10%;
+    }
+    .sign-email,
+    .sign-google{
+        
+        padding: 20px 0;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        color: var(--background_purple);
+        font-weight: 600;
+        border: 0;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+
+    .sign-google{
+        background-color: var(--button_blue) ;
+        color: var(--white);
+    }
+    .sign-google img {
+        height: 20px;
+        background-color: var(--white);
+        padding: 2%;
+        border-radius: 4px;
+        position: absolute;
+        left:10px;
+    }
+    .slider img{
+        width: 100%;
+    }
+
+    .brands{
+        background-color: var(--background_ivory);
+        padding: 5%;
+    }
+
+    .brands {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands p {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+
+    .brands img{
+        height: 35px;
+    padding: 2%;    }
+
+    .teams{
+        padding: 5%;
+        text-align: center;
+    }
+    .teams h3{
+        
+        color: var( --background_purple);
+        font-size: 34px;
+    }
+
+
+    .teams li{
+        list-style-type: none;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+
+    .teams li p:first-child{
+        font-size: 50px;
+        color: var( --background_purple);
+        margin: 0;
+    }
+
+    .teams li p:last-child{
+        font-size: 15px;
+        width: 50%;
+        font-weight: 600;
+        color: var(--paragraph_black);
+        margin: 0 auto;
+    }
+    .welcome{
+        background-color: var( --background_purple);
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    
+    .welcome h3 {
+        color: var(--white);
+        font-size: 35px;
+        padding: 8%;
+    }
+
+    .welcome button{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding: 3% 5%;
+        background-color: var(--white);
+        border: 0;
+        border-radius: 5px;
+        margin-bottom: 3%;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var( --background_purple);
+    }
+
+    .welcome button:last-child{
+        background-color: var( --background_purple);
+        color: var(--white);
+        border: 1px solid var(--white);
+    }
+    footer li{
+        list-style-type: none;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    footer li:last-child{
+        color: var(--links_blue);
+    }
+    .rrss{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+    .extra-footer{
+        padding: 5%;
+    }
+    
+/* } */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .teams ul{
+        display: flex;
+    }
+
+    .brands {
+        justify-content: center;
+    }
+    .brands-images{
+        display: flex;
+        justify-content: center;
+    }
+}
